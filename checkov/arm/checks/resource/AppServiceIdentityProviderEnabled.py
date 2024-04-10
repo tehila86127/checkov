@@ -4,7 +4,7 @@ from checkov.common.models.enums import CheckCategories
 from checkov.arm.base_resource_value_check import BaseResourceValueCheck
 
 
-class WebAppIdentityProviderEnabled(BaseResourceValueCheck):
+class AppIdentityProviderEnabled(BaseResourceValueCheck):
     def __init__(self):
         name = "Ensure that Managed identity provider is enabled for web apps"
         id = "CKV_AZURE_71"
@@ -19,5 +19,5 @@ class WebAppIdentityProviderEnabled(BaseResourceValueCheck):
         return ANY_VALUE
 
 
-check = WebAppIdentityProviderEnabled()
+check = AppIdentityProviderEnabled()
 
